@@ -26,22 +26,17 @@
 				filter: new Element.Pane.Transform.Lens.Orthographic(100)
 			});
 
-//			for (var i = -450; i < 450; i += 130) {
-//				for (var j = -350; j < 350; j += 130) {
-//					pane.add('img[src=http://jaw.cz/images/logo.png]', [i, j, 1]);
-//				}
-//			}
-//			for (var i = -450; i < 450; i += 170) {
-//				for (var j = -350; j < 350; j += 50) {
-//					pane.add(new Element('img[src=http://mootools.net/assets/images/mootools.png]'), [i, j, 1]);
-//				}
-//			}
-			for (var i = -450; i < 450; i += 50) {
+			for (var i = -450; i < 450; i += 170) {
+				for (var j = -350; j < 350; j += 50) {
+					pane.add(new Element('img[src=http://mootools.net/assets/images/mootools.png]'), [i, j, 1]);
+				}
+			}
+/*			for (var i = -450; i < 450; i += 50) {
 				for (var j = -350; j < 350; j += 50) {
 					pane.add('div.red-square', [i, j, 1]);
 				}
 			}
-			//pane.render();
+*/			//pane.render();
 
 //			var counter = 0, max = 700;
 //			var timer = (function() {
@@ -69,8 +64,6 @@
 			pane.add(el, [0,0,0]);
 			pane.render();
 			el.addClass('big');
-			
-			pane.add(new Element('img[src=http://kohanaframework.org/media/img/kohana.png]'), [300,100]);
 			
 			var counter = 0, max = 700;
 			var timer = (function() {
